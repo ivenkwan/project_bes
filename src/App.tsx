@@ -9,6 +9,9 @@ import WorkflowModule from './pages/workflows/WorkflowModule';
 import RiskModule from './pages/risk/RiskModule';
 import ActionsModule from './pages/actions/ActionsModule';
 import IncidentsModule from './pages/incidents/IncidentsModule';
+import PolicyModule from './pages/policy/PolicyModule';
+import OptimizationModule from './pages/optimization/OptimizationModule';
+import AutomationModule from './pages/automation/AutomationModule';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
           <Route path="/risk" element={<ProtectedRoute><RiskModule /></ProtectedRoute>} />
           <Route path="/actions" element={<ProtectedRoute><ActionsModule /></ProtectedRoute>} />
           <Route path="/incidents" element={<ProtectedRoute><IncidentsModule /></ProtectedRoute>} />
+          <Route path="/policy" element={<ProtectedRoute><PolicyModule /></ProtectedRoute>} />
+          <Route path="/optimization" element={<ProtectedRoute><OptimizationModule /></ProtectedRoute>} />
+          <Route path="/automation" element={<ProtectedRoute><AutomationModule /></ProtectedRoute>} />
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

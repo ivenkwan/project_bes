@@ -9,7 +9,10 @@ import {
   AlertTriangle,
   CheckSquare,
   AlertCircle,
-  LogOut
+  LogOut,
+  BookOpen,
+  TrendingDown,
+  Bot
 } from 'lucide-react';
 import { clsx } from 'clsx';
 
@@ -24,6 +27,9 @@ const navigation = [
   { name: 'Risk Management', href: '/risk', icon: AlertTriangle },
   { name: 'Actions', href: '/actions', icon: CheckSquare },
   { name: 'Incidents', href: '/incidents', icon: AlertCircle },
+  { name: 'Policy Management', href: '/policy', icon: BookOpen },
+  { name: 'Optimization', href: '/optimization', icon: TrendingDown },
+  { name: 'Automation', href: '/automation', icon: Bot },
 ];
 
 export function MainLayout({ children }: MainLayoutProps) {
